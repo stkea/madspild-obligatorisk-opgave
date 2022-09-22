@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-cards.css" />
+    <link rel="stylesheet" href="styles-banner.css" />
+    <title>Madspild</title>
+  </head>
+
+  <body>
+    <!-- Main area -->
+    <main>
+      <!-- Navbar -->
+      <div class="container mx-auto navbar">
+        <p id="nav-title">STOP MADSPILD</p>
+        <div class="flex-row space-x-links" style="justify-content: end">
+          <div id="nav-item"><a href="#samarbejder">Samarbejder</a></div>
+          <div id="nav-item"><a href="#fakta">Fakta</a></div>
+          <div id="nav-item"><a href="#change">Ændre dine vaner</a></div>
+          <div id="nav-item"><a href="#contact">Kontakt os</a></div>
+        </div>
+      </div>
+
+      <!-- Hero section -->
+      <div class="imageBackground fillScreen"></div>
+      <div class="container mx-auto textContainer">
+        <div class="tbs center">
+          <div class="tb1">
+            <h1>STOP MADSPILD</h1>
+            <div class="tb1-cont">
+              En organisation der kæmper for at mindske madspild i de danske
+              hjem og butikker
+            </div>
+          </div>
+          <div class="tb2">
+            <div class="tb2-cont">
+              Hver dag bliver der smidt næsten
+              <span style="color: #fa8080; font-weight: 700">2.000</span> tons
+              fødevarer ud i Danmark
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collaboration section -->
+      <div class="container mx-auto flex-col space-y">
+        <!-- Section title -->
+        <div class="section-title" id="samarbejder" style="padding-top: 6rem">
+          <div id="section-bar"></div>
+          <div id="section-text">Samarbejder</div>
+        </div>
+        <!-- Content -->
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          "
+        >
+          <div class="storeBox">
+            <div class="imageContainer">
+              <img src="pictures/styrelsen_logo.png" width="268" height="83" />
+            </div>
+            <div class="boxText">
+              Vi samarbejder med fødevarestyrelsen og kæmper for at skabe bedre
+              regulationer.
+            </div>
+          </div>
+          <div class="storeBox">
+            <div class="imageContainer">
+              <img src="pictures/netto_logo.png" width="225" height="53" />
+            </div>
+            <div class="boxText">
+              Vi samarbejder med Netto om at mindske madspildet ude i
+              butikkerne.
+            </div>
+          </div>
+          <div class="storeBox">
+            <div class="imageContainer">
+              <img
+                src="pictures/coop_logo.png"
+                width="126"
+                height="52"
+                alt="Logo"
+              />
+            </div>
+            <div class="boxText">
+              Vi samarbejder med Coop om at øge madspildet ude i butikkerne.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Facts section -->
+      <section id="facts-section" class="space-y container mx-auto">
+        <!-- Section title -->
+        <div class="section-title" id="fakta" style="padding-top: 6rem">
+          <div id="section-bar"></div>
+          <div id="section-text">Fakta</div>
+        </div>
+        <!-- Content -->
+        <div class="facts-grid">
+          <p id="grid-text">
+            Madspildet i den danske servicesektor udgør 227.000-ton pr. år. Til
+            sammenligning er det samlede madspild fra husholdningerne
+            261.000-ton pr. år.
+          </p>
+          <div
+            id="grid-img"
+            style="
+              background-image: url('pictures/foodwaste2.jpg');
+              background-size: cover; ;
+            "
+          ></div>
+          <div
+            id="grid-img"
+            style="
+              background-image: url('pictures/foodwaste3.jpg');
+              background-size: cover; ;
+            "
+          ></div>
+          <p id="grid-text">
+            Det største madspild i servicesektoren stammer fra detailhandelen,
+            der spilder 163.000 tons pr. år, svarende til 72 % af
+            servicesektorens madspild.
+          </p>
+          <p id="grid-text">
+            Af detailhandelens madspild står specialforretninger som slagtere,
+            fiskeforretninger og grønthandlere for 12.000 tons pr. år, mens
+            ikke-specialiserede forretninger som kiosker, købmænd, supermarkeder
+            og varehuse står for 151.000-ton pr. år.
+          </p>
+          <div
+            id="grid-img"
+            style="
+              background-image: url('pictures/foodwaste1.jpg');
+              background-size: cover; ;
+            "
+          ></div>
+        </div>
+      </section>
+
+      <!-- Playground section -->
+      <div class="banner" id="change" style="margin-top: 6rem">
+        <section class="container mx-auto center-align">
+          <div class="flex-row">
+            <div
+              class="change-section-left"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+              "
+            >
+              <!-- Section title -->
+              <div class="section-title">
+                <div id="section-bar"></div>
+                <div id="section-text" style="color: white">
+                  Ændre dine vaner
+                </div>
+              </div>
+              <!-- Section content -->
+              <p id="change-section-text">
+                Flyt på slideren for at se mængden af madspild udfra en
+                gennemsnitlig dansk husstand
+              </p>
+              <div id="input-area">
+                <div class="flex-row" style="align-items: center">
+                  <p>Husstandsstørelse</p>
+                  <span><span id="input-value">1</span> personer</span>
+                </div>
+                <input
+                  type="range"
+                  min="1"
+                  max="10"
+                  value="1"
+                  oninput="sliderChange(event)"
+                />
+              </div>
+            </div>
+            <div class="change-section-right">
+              <div id="change-section-display">
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                  "
+                  class="space-x"
+                >
+                  <div id="usage-element">0</div>
+                  <div>kg</div>
+                </div>
+                <div>madspild</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact section -->
+      <section class="container mx-auto space-y">
+        <div class="flex-col space-y">
+          <!-- Section title -->
+          <div class="section-title" id="contact" style="padding-top: 6rem">
+            <div id="section-bar"></div>
+            <div id="section-text">Kontakt os</div>
+          </div>
+          <!-- Content -->
+          <div class="flex-row" style="height: 100%; width: 100%">
+            <div class="flex-col input-section">
+              <label for="name-company-input">Navn / Firma</label>
+              <input
+                class="contact-input"
+                name="name-company-input"
+                id="name-company-input"
+              />
+              <label for="mail-input">E-mail</label>
+              <input class="contact-input" name="mail-input" id="mail-input" />
+              <label for="message-input">Tekst</label>
+              <textarea
+                class="contact-input"
+                name="message-input"
+                id="message-input"
+              ></textarea>
+              <button class="flex-row">
+                <img src="pictures/send.svg" />
+                <div>Send mail</div>
+              </button>
+            </div>
+            <div class="flex-col so-me-box">
+              <div
+                style="display: flex; flex-direction: row; align-items: center"
+              >
+                <span style="margin-right: 20px"
+                  ><img src="pictures/location.svg" /></span
+                >Guldberggade 29, 2200 København N
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-right: 10rem;
+                "
+              >
+                <span style="margin-right: 20px"
+                  ><img src="pictures/facebook.svg" /></span
+                >@StopMadspild
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  margin-right: 10rem;
+                "
+              >
+                <span style="margin-right: 20px"
+                  ><img src="pictures/instagram.svg" /></span
+                >@StopMadspild
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div style="margin-top: 6rem" class="footer">
+        <div
+          class="container mx-auto"
+          style="
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>Stop Madspild</div>
+          <div>Copyright @ Stop Madspild</div>
+          <div>CVR: 273817277374</div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const sliderChange = (e) => {
+        const currentValue = e.target.value;
+        const inputElement = document.getElementById("input-value");
+        const usageElement = document.getElementById("usage-element");
+        inputElement.innerText = currentValue;
+        usageElement.innerText = calculateUsage(currentValue);
+      };
+
+      const calculateUsage = (inputValue) => {
+        return 3 * Math.pow(2, inputValue);
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.imageBackground {
+  background-image: url("pictures/styrelsen_2.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  opacity: 0.75;
+  height: 422px;
+  position: absolute;
+  top: auto;
+  left: 0;
+  right: 0;
+}
+
+.textContainer {
+  width: 100%;
+  height: 422px;
+}
+
+.tbs {
+  display: flex;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.tb1 {
+  user-select: none;
+  width: 531px;
+  height: min-content;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: min-content min-content;
+  align-items: center;
+}
+
+.tb1 > h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.tb1-cont {
+  font-size: 2rem;
+  font-weight: 400;
+  width: 398px;
+  color: #f1f1f1;
+}
+
+.tb2 {
+  user-select: none;
+  background: #535353;
+  width: 433px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.tb2-cont {
+  text-align: center;
+  width: 271px;
+  height: 240px;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.spacer {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}

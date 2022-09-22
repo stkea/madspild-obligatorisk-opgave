@@ -1,0 +1,49 @@
+.mainContainer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 60px;
+  width: min-content;
+}
+
+.storeBox {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 84px 1fr;
+  height: 281px;
+  width: 400px;
+  border-radius: 8px;
+  background: #fbfbfb;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.imageContainer {
+  margin-top: 31px;
+  margin-left: auto;
+  margin-right: auto;
+  width: min-content;
+  height: min-content;
+  overflow: auto;
+}
+
+.boxText {
+  margin-top: 49px;
+  margin-bottom: 48px;
+  padding-left: 40px;
+  width: 302px;
+  height: 90px;
+  color: #bebebe;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacer {
+  width: 100%;
+  height: 100%;
+}
